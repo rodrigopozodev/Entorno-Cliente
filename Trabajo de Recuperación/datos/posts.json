@@ -1,0 +1,30 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "titulo": "Caracoles",
+      "subtitulo": "Publicado el 15 de abril de 2024",
+      "contenido": "Los caracoles son moluscos gasterópodos que se encuentran en una amplia variedad de hábitats, desde ambientes terrestres hasta acuáticos. Son conocidos por su concha espiralada y su lento movimiento. Los caracoles son herbívoros y se alimentan de una variedad de plantas y materia orgánica. Además de su peculiar morfología, los caracoles poseen una serie de adaptaciones que les permiten sobrevivir en entornos diversos y desafiantes. Su capacidad para adaptarse a diferentes condiciones ambientales es verdaderamente fascinante. Los caracoles han desarrollado mecanismos para resistir cambios bruscos de temperatura y humedad, lo que les permite habitar desde bosques húmedos hasta desiertos áridos. Algunas especies de caracoles son conocidas por su longevidad, llegando a vivir varios años en condiciones adecuadas. Esta longevidad les otorga un papel importante en los ecosistemas donde habitan, contribuyendo al ciclo de nutrientes y siendo parte integral de la cadena alimentaria. Además de su importancia ecológica, los caracoles también tienen un gran impacto en la vida humana. Algunas culturas han utilizado caracoles como fuente de alimento durante siglos, aprovechando su alto contenido en proteínas y nutrientes. Otros los consideran como mascotas debido a su belleza y comportamiento único, llegando incluso a criar variedades selectas por sus características especiales.",
+      "contenido_extra": "Algunas especies de caracoles son conocidas por su longevidad, llegando a vivir varios años en condiciones adecuadas. Esta longevidad les otorga un papel importante en los ecosistemas donde habitan, contribuyendo al ciclo de nutrientes y siendo parte integral de la cadena alimentaria. Además de su importancia ecológica, los caracoles también tienen un gran impacto en la vida humana. Algunas culturas han utilizado caracoles como fuente de alimento durante siglos, aprovechando su alto contenido en proteínas y nutrientes. Otros los consideran como mascotas debido a su belleza y comportamiento único, llegando incluso a criar variedades selectas por sus características especiales."
+    },
+    {
+      "id": 2,
+      "titulo": "Águila Real",
+      "subtitulo": "Publicado el 16 de abril de 2024",
+      "contenido": "El águila real es una de las aves rapaces más grandes y poderosas del mundo. Se encuentra en diversas regiones de Europa, Asia, África del Norte y América del Norte. Con su impresionante envergadura y agudas garras, el águila real es un cazador formidable que se alimenta principalmente de mamíferos pequeños y medianos. Además de su majestuosidad en vuelo, el águila real es un símbolo de libertad y poder para muchas culturas a lo largo de la historia. Su agudo sentido de la vista y su capacidad para volar a grandes alturas la convierten en un depredador supremo que juega un papel crucial en el equilibrio de los ecosistemas en los que habita. El águila real, además de su papel como depredador, tiene una importancia simbólica en muchas culturas. Ha sido venerada como un símbolo de majestad y poder, apareciendo en mitos, leyendas y emblemas nacionales. Su capacidad para dominar los cielos y su belleza natural la convierten en un emblema de grandeza y libertad. El águila real también desempeña un papel importante en el mantenimiento del equilibrio ecológico al regular las poblaciones de presas y al contribuir a la diversidad genética de las poblaciones de aves rapaces.",
+      "contenido_extra": "El águila real, además de su papel como depredador, tiene una importancia simbólica en muchas culturas. Ha sido venerada como un símbolo de majestad y poder, apareciendo en mitos, leyendas y emblemas nacionales. Su capacidad para dominar los cielos y su belleza natural la convierten en un emblema de grandeza y libertad. El águila real también desempeña un papel importante en el mantenimiento del equilibrio ecológico al regular las poblaciones de presas y al contribuir a la diversidad genética de las poblaciones de aves rapaces."
+    },
+    {
+      "id": 3,
+      "titulo": "Caracoles",
+      "imagen_id": "../img/caracol.jpg",
+      "contenido": "Los caracoles son moluscos fascinantes que han evolucionado para adaptarse a una amplia gama de ambientes. Algunas especies son terrestres, mientras que otras son acuáticas. Los caracoles juegan un papel importante en los ecosistemas como descomponedores y son una parte integral de la cadena alimentaria."
+    },
+    {
+      "id": 4,
+      "titulo": "Águila Real",
+      "imagen_id": "../img/aguila real.jpg",
+      "contenido": "El águila real es un símbolo de majestad y poder en muchas culturas. Con su agudo sentido de la vista y su capacidad para volar a grandes alturas, el águila real es un depredador supremo"
+    }
+  ]
+}

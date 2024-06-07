@@ -1,6 +1,6 @@
-# Índice
+# 2.2
 
-- [Índice](#índice)
+- [2.2](#22)
   - [Array](#array)
     - [Declaración](#declaración)
   - [Metodos útiles](#metodos-útiles)

@@ -1,0 +1,170 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto auto; /* Reducido a dos filas */
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    grid-template-areas:
+        "izquierda contentenedor contentenedor contentenedor contentenedor derecha"
+        "izquierda contentenedor contentenedor contentenedor contentenedor derecha";
+}
+
+.contenedor_principal {
+    background-color: white;
+    border: 1px solid black;
+    grid-area: contentenedor;
+    display: grid;
+    margin: 10px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "contenedor_secundario"
+        "prueba";
+}
+
+.header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr; /* Corrección en la definición de grid-template-rows */
+    grid-template-areas:
+        "titulo . ."
+        "navegacion navegacion navegacion";
+}
+
+.navegacion {
+    grid-area: navegacion;
+    border: 1px solid black;
+    background-color: #333; /* Color gris oscuro */
+    display: flex;
+    align-items: center; /* Alinea verticalmente */
+    justify-content: start; /* Alinea horizontalmente */
+    margin: 10px;
+}
+
+.navegacion a {
+    text-decoration: none; /* Quita el subrayado */
+    margin: 10px 60px; /* Aumenta el margen horizontal */
+    color: white; /* Color del texto */
+}
+
+.contenedor_secundario {
+    grid-area: contenedor_secundario;
+    display: grid;
+    grid-template-columns: 1fr; /* Una columna */
+    grid-template-rows: 0.5fr 0.1fr;
+    grid-gap: 10px; /* Espacio entre las celdas */
+    margin: 10px; /* Margen alrededor del contenedor */
+    
+    grid-template-areas:
+        "slider"
+        "swiper-pagination";
+}
+
+.slider {
+    grid-area: slider;
+    border: 5px solid #e2e2e2; 
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    overflow: hidden; /* Evita que el contenido se desborde */
+    width: calc(100% - 10px); /* Ajusta el ancho al 100% y resta 20px de margen */
+}
+
+.swiper-pagination {
+    grid-area: swiper-pagination;
+    position: unset !important; /* Cambia la posición a su valor predeterminado */
+    text-align: unset !important; /* Cambia el alineamiento del texto a su valor predeterminado */
+    transition: unset !important; /* Elimina la transición */
+    transform: unset !important; /* Elimina la transformación */
+    z-index: unset !important; /* Elimina el índice z */
+    
+    /* Añade tus estilos adicionales aquí */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+/* Estilo para los puntos de la paginación */
+.swiper-pagination-bullet {
+    background-color: #666 !important; /* Color de los puntos oscuro */
+    margin: 0 5px !important; /* Ajusta el margen horizontal entre los puntos */
+    width: 10px !important; /* Ajusta el ancho de los puntos */
+    height: 10px !important; /* Ajusta la altura de los puntos */
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    content: none !important; /* Esta línea elimina el contenido de las flechas de navegación */
+}
+
+.swiper-button-next img {
+    transform: rotate(180deg); /* Voltea la flecha en 180 grados */
+}
+
+.swiper {
+    grid-area: swiper; /* Cambiado a "swiper" */
+    width: 100%; /* Ajusta el ancho del swiper al 100% */
+    height: 100%; /* Ajusta la altura del swiper al 100% */
+}
+
+.swiper-slide img {
+    width: 100%; /* Ajusta el ancho al 100% */
+    height: 100%; /* Ajusta la altura al 100% */
+    object-fit: cover; /* Escala las imágenes para cubrir el contenedor manteniendo su relación de aspecto */
+    
+}
+
+
+.prueba {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* 4 columnas igualmente espaciadas */
+    grid-template-rows: 0.1fr; /* La primera fila ajusta automáticamente la altura del contenido, la segunda ocupa el espacio restante */
+
+    grid-template-areas: 
+    "post1 post3"
+    "post2 post4"; /* Definimos las áreas de los posts */
+
+}
+
+.post {
+    padding: 10px;
+}
+
+.post1 {
+    grid-area: post1;
+}
+
+.post2 {
+    grid-area: post2;
+}
+
+.post3 {
+    grid-area: post3;
+}
+
+.post4 {
+    grid-area: post4;
+}
+
+.post img {
+    max-width: 100%; /* Limita el ancho máximo de la imagen al ancho de su contenedor */
+    height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+}
+
+.contenedor_principal {
+    margin-bottom: 0; /* Elimina el margen inferior del contenedor principal */
+}
+
+.footer {
+    margin-top: 0; /* Elimina el margen superior del footer */
+}
+
+.footer {
+    display: flex;
+    align-items: center; /* Alinea verticalmente arriba */
+    justify-content: center; /* Alinea horizontalmente en el centro */
+    margin-top: 0; /* Elimina el margen superior */
+    margin-bottom: 0; /* Elimina el margen inferior */
+}

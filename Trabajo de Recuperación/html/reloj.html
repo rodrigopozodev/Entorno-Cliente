@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog</title>
+    <link rel="stylesheet" href="/css/styles2.css">
+    <link rel="stylesheet" href="/css/tema.css">
+    <link rel="stylesheet" href="/css/reloj.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor_principal">
+        <header class="header">
+            <div class="titulo" id="titulo">PROYECTO JS</div>
+            <nav class="navegacion">
+                <!-- Enlaces a las diferentes páginas HTML -->
+                <a href="Inicio.html">Inicio</a>
+                <a href="sobre_mi.html">Sobre mí</a>
+                <a href="#">Reloj</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </header>
+        <div class="contenedor_secundario">
+            <div id="reloj" class="reloj"></div>
+            <div class="footer">
+                <button id="btnSubirArriba">Subir al principio</button>
+            </div> 
+        </div>
+        
+    </div>
+    <div class="cuadrados">
+        <button class="boton-color verde" onclick="cambiarTema('/img/hojas.jpg', 'verde')"></button>
+        <button class="boton-color rojo" onclick="cambiarTema('/img/rojo.jpg', 'rojo')"></button>
+        <button class="boton-color azul" onclick="cambiarTema('/img/cielo.jpg', 'azul')"></button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/scripts.js"></script>
+    <script src="/js/temas.js"></script>
+    <script src="/js/login.js"></script>
+
+    <script src="/js/reloj.js"></script>
+    <script src="/js/boton_subir.js"></script>
+</body>
+</html>

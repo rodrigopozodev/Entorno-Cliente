@@ -1,0 +1,72 @@
+body {
+    transition: background-image 0.3s ease;
+    background-size: cover; /* Ajustar imagen de fondo al tamaño del contenedor */
+    background-repeat: no-repeat; /* Evitar la repetición de la imagen */
+    background-position: center; /* Centrar la imagen de fondo */
+}
+
+
+.cuadrados {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-color {
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    margin-bottom: 5px;
+    cursor: pointer;
+    margin-left: 5px; /* Separación del margen izquierdo */
+   
+} 
+
+.verde {
+    background-color: green;
+}
+
+.rojo {
+    background-color: red;
+}
+
+.azul {
+    background-color: rgb(0, 187, 255);
+}
+
+.titulo {
+    grid-area: titulo;
+    color: white; /* Color del texto */
+    font-size: 2em; /* Tamaño de la letra */
+    display: flex;
+    align-items: center; /* Alinea verticalmente */
+    justify-content: center; /* Alinea horizontalmente */
+    margin: 10px;
+    letter-spacing: 0.4em; /* Aumenta el espacio entre las letras */
+}
+
+#btnSubirArriba {
+    border: none;
+    padding: 16px 32px;
+    cursor: pointer;
+    color: white; /* Color del texto */
+    border-radius: 20px; /* Borde redondeado */
+}
+
+/* Estilos para el botón según el tema */
+.verde #btnSubirArriba {
+    background-color: green;
+}
+
+.rojo #btnSubirArriba {
+    background-color: red;
+}
+
+.azul #btnSubirArriba {
+    background-color: rgb(0, 187, 255);
+}
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/tema.css">
+    <link rel="stylesheet" href="/css/formulario.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Contenedor del usuario logueado y botones -->
+    <div id="userContainer" style="display: none;">
+        <span id="loggedInUser"></span>
+        <div id="userButtonsContainer">
+            <button id="logoutBtn">Cerrar sesión</button>
+        </div>
+    </div>
+
+    <div class="contenedor_principal">
+        <header class="header">
+            <div class="titulo" id="titulo">PROYECTO JS</div>
+            <nav class="navegacion">
+                <!-- Enlaces a las diferentes páginas HTML -->
+                <a href=#>Inicio</a>
+                <a href="sobre_mi.html">Sobre mí</a>
+                <a href="reloj.html">Reloj</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </header>
+        <div class="contenedor_secundario">
+            <!-- If we need pagination -->
+            <div class="slider">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="/img/hojas.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/img/rojo.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="/img/cielo.jpg" alt=""></div>
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"><img src="/img/circulo-de-flecha.png" alt="Flecha izquierda"></div>
+                    <div class="swiper-button-next"><img src="/img/circulo-de-flecha.png" alt="Flecha derecha"></div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            
+            <div class="prueba" id="postContainer">
+                <!-- Los posts se agregarán aquí dinámicamente -->     
+            </div>  
+            
+             <!-- Formulario de inicio de sesión -->
+             <form id="loginForm" class="login-form" style="display: flex; justify-content: center; align-items: center;">
+                <input type="text" id="usernameInput" placeholder="Nombre de usuario" required>
+                <input type="password" id="passwordInput" placeholder="Contraseña" required>
+                <button type="submit" id="loginBtn">Iniciar sesión</button>
+            </form>  
+
+            <div class="footer">
+                <button id="btnSubirArriba">Subir al principio</button>
+            </div> 
+        </div>
+        
+    </div>
+    <div class="cuadrados">
+        <button class="boton-color verde" onclick="cambiarTema('/img/hojas.jpg', 'verde')"></button>
+        <button class="boton-color rojo" onclick="cambiarTema('/img/rojo.jpg', 'rojo')"></button>
+        <button class="boton-color azul" onclick="cambiarTema('/img/cielo.jpg', 'azul')"></button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/scripts.js"></script>
+    <script src="/js/temas.js"></script>
+    <script src="/js/post.js"></script>
+    <script src="/js/login.js"></script>
+    <script src="/js/boton_subir.js"></script>
+</body>
+</html>
